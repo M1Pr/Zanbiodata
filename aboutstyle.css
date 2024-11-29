@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #121212;
+  font-family: "Montserrat";
+  color: #b0b0b0;
+}
+
+main {
+  padding: 48px 38px;
+}
+
+main h1 {
+  font-size: 5rem;
+  font-weight: normal;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px;
+}
+
+.ml {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ml button {
+  width: 50%;
+  height: 38px;
+  background-color: transparent;
+  color: #b0b0b0;
+  border: 1px solid #b0b0b0;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  gap: 6px;
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+.pml {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.mr {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 12px;
+}
+
+.mr p {
+  width: 75%;
+  font-size: 1em;
+}
+
+.mr img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.arrow {
+  width: 16px;
+  height: auto;
+  filter: brightness(0) saturate(100%) invert(81%) sepia(1%) saturate(0%)
+    hue-rotate(49deg) brightness(89%) contrast(87%);
+}
+
+.ml button:hover {
+  box-shadow: 0px 4px 20px 2px rgba(255, 255, 255, 0.75);
+}
+
+.ml button:active {
+  box-shadow: 0px 4px 10px 2px rgba(255, 255, 255, 0.75);
+  transform: translateY(5px);
+}
+
+.dhome {
+  height: 0;
+  min-width: 100px;
+  opacity: 0;
+  position: absolute;
+  transition: 300ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  gap: 6px;
+  padding: 4px;
+}
+
+.home:hover .dhome {
+  height: 62px;
+  width: auto;
+  opacity: 1;
+  background-color: #b0b0b0;
+  color: #121212;
+}
+
+.dcontact {
+  height: 0;
+  min-width: 100px;
+  opacity: 0;
+  position: absolute;
+  transition: 300ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  gap: 6px;
+  padding: 4px;
+}
+
+.contact:hover .dcontact {
+  height: 62px;
+  width: auto;
+  opacity: 1;
+  background-color: #b0b0b0;
+  color: #121212;
+}

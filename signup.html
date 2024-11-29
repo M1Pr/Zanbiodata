@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sign Up page" />
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="stylesheet" href="./font.css" />
+    <link rel="icon" href="./ic/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="./img/abstract-dark-colour-tma-fon.jpg" class="background" />
+      <form id="sign">
+        <div class="sign-wrapper">
+          <div class="logo-bg">
+            <img src="./ic/logo.png" class="logo" />
+          </div>
+          <h1>Welcome</h1>
+          <div class="input-wrapper">
+            <div class="user-wrapper">
+              <label> Username/Email </label>
+              <input
+                type="email"
+                required
+                placeholder="username atau email..."
+                maxlength="32"
+              />
+            </div>
+            <div class="pass-wrapper">
+              <label>Password</label>
+              <input
+                type="password"
+                required
+                placeholder="*******"
+                maxlength="8"
+              />
+              <label>Repeat Password</label>
+              <input
+                type="r-password"
+                required
+                placeholder="*******"
+                maxlength="8"
+              />
+            </div>
+          </div>
+          <button
+            type="submit"
+            value="signup"
+            class="msk-btn"
+            onclick="window.location.href='./loginpage.html'"
+          >
+            Sign Up
+          </button>
+          <div class="divider">or</div>
+          <button
+            type="button"
+            class="google-btn"
+            onclick="window.open('https://myaccount.google.com/', '_blank')"
+          >
+            <img src="./ic/google.png" class="ic-google" /><span
+              >Continue with Google</span
+            >
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

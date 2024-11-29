@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aboout Page" />
+    <link rel="stylesheet" href="./aboutstyle.css" />
+    <link rel="stylesheet" href="./font.css" />
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="icon" href="./ic/logo.png" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <div class="icon">
+        <div class="bg-logo">
+          <img src="./ic/logo.png" />
+        </div>
+        <h2>Zan</h2>
+      </div>
+      <div class="menu-c">
+        <ul>
+          <li class="home">
+            <a href="./index.html"
+              >Home
+              <div class="dhome">
+                <a href="#">Welcome</a> <a href="#">My Skills</a>
+              </div></a
+            >
+          </li>
+          <li><a href="./about.html">About</a></li>
+          <li class="contact"><a href="./contact.html">Contact
+            <div class="dcontact">
+              <a href="#">Send Me</a>
+              <a href="#">Contact Details</a>
+            </div>
+          </a></li>
+        </ul>
+      </div>
+      <div class="menu-r">
+        <button
+          class="login-btn"
+          onclick="window.location.href='./loginpage.html'"
+        >
+          Sign Up</button
+        ><button
+          class="logout-btn"
+          onclick="window.location.href='./loginpage.html'"
+        >
+          <img src="./ic/logout.png" />
+        </button>
+      </div>
+    </nav>
+    <main>
+      <h1 data-aos="fade-right" data-aos-duration="1000">ABOUT ME</h1>
+      <div class="container">
+        <div class="ml">
+          <button type="button" onclick="window.location.href='./contact.html'">Talk to Me <img src="./ic/up-right-arrow.png" class="arrow"/></button>
+          <img data-aos="fade-left" data-aos-duration="1000" src="./img/imgprf2.jpeg" class="pml"/>
+        </div>
+        <div class="mr" >
+          <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+            Nama saya Zan, saya adalah seorang pengembang web yang memiliki
+            passion dalam menciptakan pengalaman pengguna yang baik dan menarik.
+            Saya memiliki latar belakang pendidikan di bidang teknologi
+            informasi dan telah memiliki pengalaman dalam mengembangkan berbagai
+            proyek web. Saya senang berbagi pengetahuan dan pengalaman saya
+            dengan orang lain dan selalu mencari cara untuk meningkatkan
+            keterampilan saya.
+          </p>
+          <img src="./img/imgprf3.jpg" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300"/>
+        </div>
+      </div>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

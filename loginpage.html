@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Login page" />
+    <link rel="stylesheet" href="loginstyle.css" />
+    <link rel="stylesheet" href="./font.css" />
+    <link rel="icon" href="./ic/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="./img/abstract-dark-colour-tma-fon.jpg" class="background" />
+      <form id="login">
+        <div class="login-wrapper">
+          <div class="logo-bg">
+            <img src="./ic/logo.png" class="logo" />
+          </div>
+          <h1>Welcome Back</h1>
+          <div class="input-wrapper">
+            <div class="user-wrapper">
+              <label> Username/Email </label>
+              <input
+                type="email"
+                required
+                placeholder="username atau email..."
+                maxlength="32"
+              />
+            </div>
+            <div class="pass-wrapper">
+              <label>Password</label>
+              <input
+                type="password"
+                required
+                placeholder="*******"
+                maxlength="8"
+              />
+            </div>
+          </div>
+          <div class="rf-wrapper">
+            <div class="remember-me">
+              <input type="checkbox" class="cbrememberme" />
+              <span>Remember me</span>
+            </div>
+            <span>Forget password?</span>
+          </div>
+          <button
+            type="submit"
+            value="login"
+            class="msk-btn"
+            onclick="window.location.href='./index.html'"
+          >
+            Login
+          </button>
+          <div class="divider">or</div>
+          <button
+            type="button"
+            class="google-btn"
+            onclick="window.open('https://myaccount.google.com/', '_blank')"
+          >
+            <img src="./ic/google.png" class="ic-google" /><span
+              >Continue with Google</span
+            >
+          </button>
+          <p class="nhc">Not Have Account ? <a href="./signup.html">Sign Up</a></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
